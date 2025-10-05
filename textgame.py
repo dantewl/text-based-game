@@ -2,6 +2,43 @@
 import time
 import random
 
+def say(text, delay=2):
+    print(text)
+    time.sleep(delay)
+
+def chapter0():
+    say(dream_sequence[0], 2.5)
+    say(dream_sequence[1], 2.5)
+    say(dream_sequence[2], 2.5)
+    say(dream_sequence[3], 2.5)
+    say(dream_sequence[4], 2.5)
+    say(dream_sequence[5], 2.5)
+    say(dream_sequence[6], 2.5)
+
+def chapter1():
+    say(afterdream_sequence[0], 2.5)
+    say(afterdream_sequence[1], 2.5)
+    say(afterdream_sequence[2], 2.5)
+    say(afterdream_sequence[3], 2.5)
+    say(afterdream_sequence[4], 2.5)
+    say(afterdream_sequence[5], 2.5)
+    say(afterdream_sequence[6], 2.5)
+    say(afterdream_sequence[7], 2.5)
+    say(afterdream_sequence[8], 2.5)
+    say(afterdream_sequence[9], 2.5)
+    say(afterdream_sequence[10], 2.5)
+    say(afterdream_sequence[11], 2.5)
+    say(afterdream_sequence[12], 2.5)
+    say(afterdream_sequence[13], 2.5)
+    say(afterdream_sequence[14], 2.5)
+    say(afterdream_sequence[15], 2.5)
+    say(afterdream_sequence[16], 2.5)
+    say(afterdream_sequence[17], 2.5)
+
+
+
+
+
 print('Welcome!')
 
 startgame = int(input('Start the game (1):    '
@@ -14,7 +51,7 @@ if startgame == 1:
     chapters = ['Chapter 0', 'Chapter 1 - The Forest', 'Chapter 1 - The Mountains', 'Chapter 2']
     
     dream_sequence = ['After a long day at work... You came back to home and went directly to your bed',
-                    'Once you sleep... You start dreaming...', 'Once you sleep... You start dreaming...',
+                    'Once you sleep... You start dreaming...',
                     'You hear some voices in your head, voices you cannot understand', 
                     'You start feeling tired... more than you ever felt...',
                     'You try to keep dreaming... But the voices get stronger...',
@@ -40,66 +77,12 @@ if startgame == 1:
                            '*You see 2 paths you can follow*', 
                            ]
     
-    print('Chapter 0')
-    time.sleep(2.5)
-    print('...')
-    time.sleep(1)
-    print('After a long day at work... You came back to home and went directly to your bed')
-    time.sleep(2.5)
-    print('Once you sleep... You start dreaming... ')
-    time.sleep(2.5)
-    print('You hear some voices in your head, voices you cannot understand')
-    time.sleep(2.5)
-    print('You start feeling tired... more than you ever felt...')
-    time.sleep(2.5)
-    print('You try to keep dreaming... But the voices get stronger...')
-    time.sleep(2.5)
-    print('Before you realize...')
-    time.sleep(2.5)
-    print('You faint in your dreams.')
-    time.sleep(2.5)
+    chapter0() 
+    
+    chapter1()
 
-    print('...')
-    time.sleep(1)
 
-    print('You hear the voices again... But you can understand it now...')
-    time.sleep(2.5)
-    print('You hear screams... Flames... People running... ')
-    time.sleep(2.5)
-    print('You slowly start opening your eyes...')
-    time.sleep(2.5)
-    print('You see a old lady "Oh my son... "')
-    time.sleep(2.5)
-    print('You dont know why... You feel that she is really your mother')
-    time.sleep(2.5)
-    print('How can you feel such feeling for a woman you have never seen before...')
-    time.sleep(2.5)
-    print('You look around, you are in a little village house...')
-    time.sleep(2.5)
-    print('The house is burning... the screams outside get closer')
-    time.sleep(2.5)
-    print('Mom: "My son..." "cof cof" "It is time..."')
-    time.sleep(2.5)
-    print('Mom: "Please... Take this book... *She takes a book under the bed* "')
-    time.sleep(2.5)
-    print('You hear hard knocks at the door...')
-    time.sleep(2.5)
-    print(' *A man screams at the door* Man: "Open this door now!" *he kicks the door*')
-    time.sleep(2.5)
-    print('Mom: *She gives you a book* "Now run! We dont have any time left..."')
-    time.sleep(2.5)
-    print('Mom: "I love you my son... Please stay alive..."')
-    time.sleep(2.5)
-    print('*She opens the backdoor* Mom: "Run!"')
-    time.sleep(2.5)
-    print('You start running as fast as you can...')
-    time.sleep(2.5)
-    print('*You stop and look behind*')
-    time.sleep(2.5)
-    print('*You see the back-door closing... And the front-door breaking...')
-    time.sleep(2.5)
-    print('*You see 2 paths you can follow*')
-    time.sleep(1.5)
+
     
     biome_choice1 = input('"The Forest" or "The Mountain" *Make your choice*: ')
     
@@ -165,7 +148,6 @@ elif startgame == 2:
 
 else:
     print('Unexpected Error')
-
 
 
 
