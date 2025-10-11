@@ -281,21 +281,64 @@ def chapter1():
             say("Akira: \"I'm listening.\" ", 2.5) 
             say("The Queen: \"There's a rival kingdom that has been causing trouble. I need you to use your powers to help us gain an advantage.\" ", 2.5)
             say("Akira: \"What kind of advantage?\" ", 2.5)
-            say("The Queen: \"I need you to infiltrate their ranks and gather information.\" ", 2.5)
-            say("Akira: \"You want me to spy for you?\" ", 2.5)
+            say("The Queen: \"The element of surprise. It's you.\" ", 2.5)
+            say("Akira: \"You want me to help you defeat them?\" ", 2.5)
             say("The Queen: \"Precisely. Your abilities make you the perfect candidate for this task.\" ", 2.5)
-            say("Akira: \"This is a dangerous mission. Why me?\" ", 2.5)
-            say("The Queen: \"Because you are loyal and capable. I trust you, Akira.\" ", 2.5)
-            say("Akira: \"I need some time to think about it.\" ", 2.5)
-            say("The Queen: \"Of course. Take all the time you need. But remember, this mission is crucial for our kingdom's safety.\" ", 2.5)
-            say("Akira: \"I understand. I'll consider it.\" ", 2.5)
+            
+            
 
         
         
         elif choice1 == "no":
             say("Akira shakes her head firmly.", 2.5)
             say("Akira: \"I cannot accept your offer. I value my freedom too much.\" ", 2.5)
+            say("The Queen's expression darkens slightly.", 2.5)
+            say("The Queen: \"I see. A pity.\" ", 2.5)
+            say("The Queen: \"Very well. If you won't join me willingly, then perhaps we can find another way.\" ", 2.5)
+            say("Before Akira can react, the bodyguards move in.", 2.5)
+            say("Akira: \"That's how you want to play then...\" ", 2.5)
+
+            win2 = battle(enemy_name="Royal Guards", enemy_hp=50, player_hp=40):
+
+            if win2:
+                say("Akira stands victorious, the guards retreating in fear.", 2.5)
+                say("Akira says to The Queen: \"I thought your bodyguards were supposed to be elite.\" ", 2.5)
+                say("The Queen: \"This isn't over, Akira.\" ", 2.5)
+                say("Akira: \"Wanna be the next?\"", 2.5)
+                say("The Queen: \"You are brave, and I admire that. But bravery alone won't save you.\" ", 2.5)
+                say("Akira: \"That's what you think.\"", 2.5)
+                say("Akira turns around and leaves the castle.", 2.5)
+                say("As she walks through the village, she feels the eyes of the villagers on her.", 2.5)
+                say("Akira: \"I need to find a way out of this place...\" ", 2.5)
+                say("She quickly makes her way to the edge of the village, hoping to find a path through the forest.", 2.5)
+                say("Akira disappears into the trees, the Heart of Eternity pulsing with a new urgency.", 2.5)
+                say("Akira: \"I must find the Tear of Fate... before they do.\" ", 2.5)
+                say("The Heart of Eternity glows brighter, as if guiding her towards her next destination.", 2.5)
+                say("Akira says with excitement: \"I knew I was close!\" ", 2.5)
+                say("With renewed determination, Akira ventures deeper into the forest, ready to face whatever challenges lie ahead.", 2.5)
+                say("After couple of time venturing in the forest, Akira finds another village", 2.5)
+                say("Akira: \"This must be the place...\" ", 2.5)
+                say("The village looks peaceful, but Akira knows better than to let her guard down.", 2.5)
+                say("She enters the village, her eyes scanning for any sign of the Tear of Fate.", 2.5) 
+                say("She notices there's no one around, the streets eerily quiet.", 2.5)
+                say("Suddenly, she hears a faint sound coming from behind.", 2.5)
+                say("Akira turns around, her staff at the ready.", 2.5)
+                say("There, in the shadows, she sees a figure watching her.", 2.5)
+                say("Akira: \"Who's there? Show yourself!\" ", 2.5)
+                say("Akira: \"I could swear I felt a presence...\" ", 2.5)
+                say("Akira continues walking through the village, her senses heightened.", 2.5)
+                say("She notices that the houses are old and abandoned, the windows boarded up.", 2.5)
         
+            elif not win2:
+                say("The guards overpower Akira, their strength and numbers too much for her to handle.", 2.5)
+                say("Akira: \"I... I won't... let you...\" ", 2.5)
+                say("The Queen: \"You should have thought of that before refusing my offer.\" ", 2.5)
+                say("Akira falls to the ground, the world fading to black.", 2.5)
+                return False
+
+
+
+
         else:
             say("Unexpected input.", 2.5)
             return False
