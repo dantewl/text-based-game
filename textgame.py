@@ -29,7 +29,7 @@ def battle(enemy_name, enemy_hp, player_hp):
             say(f"You defend yourself. You’ll block up to {block} damage this turn.", 2)
 
         elif action == "3" or action.lower() == "use relic power":
-            relic_dmg = random.randint(10, 18)
+            relic_dmg = random.randint(199, 250)
             say("The Heart of Eternity glows softly in your hand...", 2)
             say(f"You release a burst of temporal energy that hits the {enemy_name} for {relic_dmg} damage!", 2)
             enemy_hp -= relic_dmg
@@ -61,7 +61,7 @@ def battle(enemy_name, enemy_hp, player_hp):
 
 
 def chapter0():
-    say("🌲 Chapter 0 – The Echo of the Second Relic 🌲", 3)
+    say("🌲 Chapter 0 – The Second Relic 🌲", 3)
     say("The forest is calm, yet strange echoes move through the air.", 2.5)
     say("Akira walks carefully, guided by the faint glow of her relic — The Heart of Eternity.", 2.5)
     say("Each step she takes disturbs the mist that clings to the ground.", 2.5)
@@ -96,14 +96,13 @@ def chapter0():
 
     elif choice == "no":
         say("Akira steps back, her relic pulsing faintly in warning.", 2.5)
-        say('"I’ve seen what happens when mortals defy time."', 2.5)
         say("She turns away, disappearing into the fog.", 2.5)
-        say('"Not everything should be changed."', 2.5)
-        return True
+        say("Akira: \"Not everything should be changed.\" ", 2.5)
+        return False
     else:
         say("The wind howls softly. The relic fades into dust.", 2.5)
         say("And time keeps its secret... for now.", 2.5)
-        return True
+        return False
 
 def chapter1():
     say("🌌 Chapter I – The Whisper of the Future 🌌", 3)
@@ -216,10 +215,11 @@ def chapter1():
         say("The Queen: \"If you put it that way... yes.\" ", 2.5)
         say("Akira: \"I'm not sure...\" ", 2.5)
         say("The Queen: \"You'll never have a better opportunity than this.\" ", 2.5)
-        
+
         choice1 = input("\nWill Akira accept the Queen's offer? (yes/no): ").lower()
-        
+    
         if choice1 == "yes":
+            say("🏰 Chapter II – Royalty 🏰", 3)
             say("Akira takes a deep breath, considering the offer.", 2.5)
             say("Akira: \"Alright, I will join you. But on my terms.\" ", 2.5)
             say("The Queen smiles, pleased with the decision.", 2.5)
@@ -281,14 +281,185 @@ def chapter1():
             say("Akira: \"I'm listening.\" ", 2.5) 
             say("The Queen: \"There's a rival kingdom that has been causing trouble. I need you to use your powers to help us gain an advantage.\" ", 2.5)
             say("Akira: \"What kind of advantage?\" ", 2.5)
-            say("The Queen: \"The element of surprise. It's you.\" ", 2.5)
-            say("Akira: \"You want me to help you defeat them?\" ", 2.5)
+            say("The Queen: \"They are making a combat tournament, they wanna show off their strength.\" ", 2.5)
+            say("The Queen: \"I need you to win the tournament for us.\" ", 2.5)
+            say("Akira: \"You want me to defeat them?\" ", 2.5)
             say("The Queen: \"Precisely. Your abilities make you the perfect candidate for this task.\" ", 2.5)
-            
-            
+            say("Akira: \"And if I refuse?\" ", 2.5)
+            say("The Queen: \"Then you leave me no choice but to compel you.\" ", 2.5)
+            say("Akira: \"I see...\" ", 2.5)
+            say("After some months...", 2.5)
+            say("The tournament begins.", 2.5)
+            say("Akira enters the arena, according to the tournament rules.", 2.5)
+            say("She must defeat 3 opponents to claim victory.", 2.5)
+            say("The first opponent steps forward, a fierce warrior clad in armor.", 2.5)
+            say("The Warrior: \"Ready to lose?\" He punches his shield ", 2.5)
+            say("Akira: \"Not yet.\" ", 2.5)
 
-        
-        
+            win3 = battle(enemy_name="Armored Warrior", enemy_hp=30, player_hp=40)
+            
+            if win3:
+                say("Akira stands victorious, the crowd cheering her name.", 2.5)
+                say("Akira: \"Who's next?\" ", 2.5)
+                say("The second opponent steps forward, a nimble rogue with a wicked grin.", 2.5)
+                say("Rogue: \"What a prey...\" ", 2.5)
+                say("Akira: \"We'll see about that.\" ", 2.5)
+
+                win4 = battle(enemy_name="Nimble Rogue", enemy_hp=40, player_hp=40)
+
+                if win4:
+                    say("Akira stands victorious, the crowd cheering her name.", 2.5)
+                    say("Akira: \"Next...\" ", 2.5)
+                    say("The final opponent steps forward, the Champion of the Arena.", 2.5)
+                    say("Champion: \"So, you're the gifted mage everyone’s been talking about.\" He laughs evilly.", 2.5)
+                    say("Akira: \"...\"", 2.5)
+                    say("Champion: \"Let's see if your stupid powers can save you from my blade!\" ", 2.5)
+
+                    win5 = battle(enemy_name="Arena Champion", enemy_hp=50, player_hp=40)
+
+                    if win5:
+                        say("Akira stands victorious, the crowd erupting in cheers.", 2.5)
+                        say("Akira: \"You underestimated me.\" ", 2.5)
+                        say("The Queen watches from the sidelines, a proud smile on her face.", 2.5)
+                        say("The Queen: \"Well done, Akira. You have proven yourself worthy.\" ", 2.5)
+                        say("Akira: \"Thank you, Your Majesty.\" ", 2.5)
+                        say("With the tournament won, Akira feels a sense of accomplishment.", 2.5)
+                        say("The Queen: \"This is your reward.\" ", 2.5)
+                        say("She presents Akira with a small box, inside lies a map leading to the Tear of Fate.", 2.5)
+                        say("Akira: \"The Tear of Fate... I knew I was close.\" ", 2.5)
+                        say("The Queen: \"Use it wisely, Akira. I know this is important to you.\" ", 2.5)
+                        say("The Queen: \"I'll be waiting for your return.\" ", 2.5)
+                        say("Akira: \"I will be back soon!\" ", 2.5)
+                        
+                        say("\n\n--- End of Chapter 2 ---\n\n", 3)
+                        
+                        say("🌀 Chapter III – The final relic 🌀", 2.5)
+                        
+                        say("With the map in hand, Akira sets off on the next leg of her journey, determined to find the Tear of Fate.", 2.5)
+                        say("With renewed determination, Akira ventures deeper into the forest, ready to face whatever challenges lie ahead.", 2.5)
+                        say("After couple of time venturing in the forest, Akira finds an ancient portal", 2.5)
+                        say("Akira: \"This must be the place...\" ", 2.5)
+                        say("The portal looks desactivated.", 2.5)
+                        say("Akira: \"I need to activate it somehow...\" ", 2.5)
+                        say("Akira examines the portal and finds a series of ancient runes etched into the stone.", 2.5)
+                        say("Akira: \"These runes... they seem to be a spell of activation.\" ", 2.5)
+                        say("Akira focuses her energy, channeling the power of the Heart of Eternity and the Hourglass of Ages.", 2.5)
+                        say("As she recites the incantation, the runes begin to glow with a soft light.", 2.5)
+                        say("The portal hums with energy, the air around it shimmering.", 2.5)
+                        say("With a final surge of power, Akira completes the spell.", 2.5)
+                        say("The portal shines in blue energy...", 2.5)
+                        say("Akira: \"It worked...\" ", 2.5)
+                        say("Akira steps through the portal, ready to face whatever lies beyond.", 2.5)
+                        say("As she enters the portal, she sees a vast temple filled with ancient artifacts and glowing crystals.", 2.5)
+                        say("Akira: \"This must be the Temple of Time... I can't believe it's real...\" ", 2.5)
+                        say("Akira ventures deeper into the temple.", 2.5)
+                        say("Suddenly... A shadowy figure appears before her.", 2.5)
+                        say("Shadowy Figure: \"Do you remember me?\" ", 2.5)
+                        say("Akira: \"No... it can't be...\" ", 2.5)
+                        say("Shadowy Figure: \"The shadow in your dreams... it was me.\" ", 2.5)
+                        say("Akira: \"...\" ", 2.5)
+                        say("Shadowy Figure: \"You cannot change your fate, Akira. No matter how hard you try.\" ", 2.5)
+                        say("The shadowy figure laughs evilly and shows the Tear of Fate", 2.5)
+                        say("Shadowy Figure: \"Is that what you want?\" ", 2.5)
+                        say("Akira: \"The Tear of Fate... I need it...\" ", 2.5)
+                        say("The shadowy figure reveals his true form: Chronos, the God of Time.", 2.5)
+                        say("Chronos: \"Time is a river, Akira. You cannot swim against the current.\" ", 2.5)
+                        say("Akira: \"Chronos?! I won't let you stop me!\" ", 2.5)
+                        say("Akira breaks the relics into pieces to use their full power.", 2.5)
+                        say("As the shards of the relics glow with energy, Akira feels a surge of power coursing through her.", 2.5)
+                        say("Akira: \"I can feel it... the power of time itself...\" ", 2.5)
+                        say("Chronos: \"Foolish girl. You cannot fight destiny.\" ", 2.5)
+
+                        win6 = battle(enemy_name="Chronos, the God of Time", enemy_hp=70, player_hp=55)
+
+                        if win6:
+                            say("Akira: \"The Tear of Fate... it's mine!\" ", 2.5)
+                            say("Chronos: \"No... this cannot be...\" ", 2.5)
+                            say("Chronos start fading into ashes", 2.5)
+                            say("Akira: \"I did it...\" ", 2.5)
+                            say("Akira claims the Tear of Fate, its power coursing through her.", 2.5)
+                            say("Combining the three relics, Akira feels an insane surge of power.", 2.5)
+                            say("The time-space around her warps and bends.", 2.5)
+                            say("Akira closes her eyes, focusing on her desire to change her fate.", 2.5)
+                            say("With a burst of energy, Akira unleashes the combined power of the relics.", 2.5)
+                            say("The temple shakes, the very fabric of reality bending to her will.", 2.5)
+                            say("Akira has now absolute control over time.", 2.5)
+                            say("Akira: \"I can forge the world as I see fit...\" ", 2.5)
+                            
+                            final_choice = input("\n Will Akira rewrite the world's history? (yes/no): ").lower()
+
+                            if final_choice == "yes":
+                                say("Akira focuses her newfound power, envisioning a world free from suffering and pain.", 2.5)
+                                say("With a wave of her hand, she rewrites the fabric of reality.", 2.5)
+                                say("A new world is born, one where kindness and compassion reign supreme.", 2.5)
+                                say("Akira: \"This is the world I always dreamed of...\" ", 2.5)
+                                say("As she surveys her creation, Akira feels a deep sense of fulfillment.", 2.5)
+                                say("She has changed her fate, and in doing so, has changed the fate of the world itself.", 2.5)
+                                say("The new God of Time has a name: Akira.", 2.5)
+                                say("\n\n--- THE END: THE GOD OF TIME ---\n\n", 3)
+                                return True
+                            
+                            elif final_choice == "no":
+                                say("Akira looks at the world she has the power to create.", 2.5)
+                                say("But she hesitates, realizing the weight of such a decision.", 2.5)
+                                say("Akira: \"I cannot do this...\" ", 2.5)
+                                say("Akira returns to the moment before the moment she entered in the portal", 2.5)
+                                say("Akira: \"Some things are better left unchanged...\" ", 2.5)
+                                say("She throws the relics into the portal, sealing it once more.", 2.5)
+                                say("Akira destroys the portal and returns to the castle", 2.5)
+                                say("Akira: \"Time is absolute...\" ", 2.5)
+                                say("The Queen: \"Welcome back, Akira. Did you find what you were looking for?\" ", 2.5)
+                                say("Akira: \"Yes... and no...\" ", 2.5)
+                                say("Akira: \"I have come to accept that some things are beyond my control.\" ", 2.5)
+                                say("The Queen: \"Wise words, Akira. Sometimes, acceptance is the greatest power of all.\" ", 2.5)
+                                say("Akira: \"I will use my powers to protect those I care about, but I will not try to change fate itself.\" ", 2.5)
+                                say("The Queen: \"A noble choice. You have grown much, Akira.\" ", 2.5)
+                                say("Akira: \"Thank you, Your Majesty. I am ready to embrace my role as the royal mage.\" ", 2.5)
+                                say("As Akira steps into her new role, she feels a sense of peace.", 2.5)
+                                say("She has learned that true power lies not in changing fate, but in accepting it.", 2.5)
+                                say("\n\n--- THE END: THE ROYAL MAGE ---\n\n", 3)
+                                return True
+    
+
+                            elif not win6:
+                                say("Chronos overpowers Akira, his control over time too much for her to handle.", 2.5)
+                                say("Akira: \"I... was not ready for this...\" ", 2.5)
+                                say("Chronos: \"You have already lost, Akira.\" ", 2.5)
+                                say("The world fades to black.", 2.5)
+                                return False
+                            else:
+                                say("Unexpected input.", 2.5)
+                                return False
+
+
+
+                    elif not win5:
+                        say("The Champion's skill and experience prove too much for Akira to handle.", 2.5)
+                        say("Akira: \"I... I won't... let you...\" ", 2.5)
+                        say("The world fades to black.", 2.5)
+                        return False
+                    else: 
+                        say("Unexpected input.", 2.5)
+                        return False
+           
+                elif not win4:
+                    say("The rogue overpowers Akira, their agility and cunning too much for her to handle.", 2.5)
+                    say("Akira: \"I... I won't... let you...\" ", 2.5)
+                    say("The world fades to black.", 2.5)
+                    return False
+                else:
+                    say("Unexpected input.", 2.5)
+                    return False
+            
+            elif not win3:
+                say("The warrior overpowers Akira, their strength and skill too much for her to handle.", 2.5)
+                say("Akira: \"I... I won't... let you...\" ", 2.5)
+                say("The world fades to black.", 2.5)
+                return False
+            else:
+                say("Unexpected input.", 2.5)
+                return False
+
         elif choice1 == "no":
             say("Akira shakes her head firmly.", 2.5)
             say("Akira: \"I cannot accept your offer. I value my freedom too much.\" ", 2.5)
@@ -298,7 +469,7 @@ def chapter1():
             say("Before Akira can react, the bodyguards move in.", 2.5)
             say("Akira: \"That's how you want to play then...\" ", 2.5)
 
-            win2 = battle(enemy_name="Royal Guards", enemy_hp=50, player_hp=40):
+            win2 = battle(enemy_name="Royal Guards", enemy_hp=50, player_hp=40)
 
             if win2:
                 say("Akira stands victorious, the guards retreating in fear.", 2.5)
@@ -316,19 +487,101 @@ def chapter1():
                 say("The Heart of Eternity glows brighter, as if guiding her towards her next destination.", 2.5)
                 say("Akira says with excitement: \"I knew I was close!\" ", 2.5)
                 say("With renewed determination, Akira ventures deeper into the forest, ready to face whatever challenges lie ahead.", 2.5)
-                say("After couple of time venturing in the forest, Akira finds another village", 2.5)
+                say("After couple of time venturing in the forest, Akira finds an ancient portal", 2.5)
                 say("Akira: \"This must be the place...\" ", 2.5)
-                say("The village looks peaceful, but Akira knows better than to let her guard down.", 2.5)
-                say("She enters the village, her eyes scanning for any sign of the Tear of Fate.", 2.5) 
-                say("She notices there's no one around, the streets eerily quiet.", 2.5)
-                say("Suddenly, she hears a faint sound coming from behind.", 2.5)
-                say("Akira turns around, her staff at the ready.", 2.5)
-                say("There, in the shadows, she sees a figure watching her.", 2.5)
-                say("Akira: \"Who's there? Show yourself!\" ", 2.5)
-                say("Akira: \"I could swear I felt a presence...\" ", 2.5)
-                say("Akira continues walking through the village, her senses heightened.", 2.5)
-                say("She notices that the houses are old and abandoned, the windows boarded up.", 2.5)
-        
+                say("The portal looks desactivated.", 2.5)
+                say("Akira: \"I need to activate it somehow...\" ", 2.5)
+                say("Akira examines the portal and finds a series of ancient runes etched into the stone.", 2.5)
+                say("Akira: \"These runes... they seem to be a spell of activation.\" ", 2.5)
+                say("Akira focuses her energy, channeling the power of the Heart of Eternity and the Hourglass of Ages.", 2.5)
+                say("As she recites the incantation, the runes begin to glow with a soft light.", 2.5)
+                say("The portal hums with energy, the air around it shimmering.", 2.5)
+                say("With a final surge of power, Akira completes the spell.", 2.5)
+                say("The portal shines in blue energy...", 2.5)
+                say("Akira: \"It worked...\" ", 2.5)
+                say("Akira steps through the portal, ready to face whatever lies beyond.", 2.5)
+                say("As she enters the portal, she sees a vast temple filled with ancient artifacts and glowing crystals.", 2.5)
+                say("Akira: \"This must be the Temple of Time... I can't believe it's real...\" ", 2.5)
+                say("Akira ventures deeper into the temple.", 2.5)
+                say("Suddenly... A shadowy figure appears before her.", 2.5)
+                say("Shadowy Figure: \"Do you remember me?\" ", 2.5)
+                say("Akira: \"No... it can't be...\" ", 2.5)
+                say("Shadowy Figure: \"The shadow in your dreams... it was me.\" ", 2.5)
+                say("Akira: \"...\" ", 2.5)
+                say("Shadowy Figure: \"You cannot change your fate, Akira. No matter how hard you try.\" ", 2.5)
+                say("The shadowy figure laughs evilly and shows the Tear of Fate", 2.5)
+                say("Shadowy Figure: \"Is that what you want?\" ", 2.5)
+                say("Akira: \"The Tear of Fate... I need it...\" ", 2.5)
+                say("The shadowy figure reveals his true form: Chronos, the God of Time.", 2.5)
+                say("Chronos: \"Time is a river, Akira. You cannot swim against the current.\" ", 2.5)
+                say("Akira: \"Chronos?! I won't let you stop me!\" ", 2.5)
+                say("Akira breaks the relics into pieces to use their full power.", 2.5)
+                say("As the shards of the relics glow with energy, Akira feels a surge of power coursing through her.", 2.5)
+                say("Akira: \"I can feel it... the power of time itself...\" ", 2.5)
+                say("Chronos: \"Foolish girl. You cannot fight destiny.\" ", 2.5)
+
+                win7 = battle(enemy_name="Chronos, the God of Time", enemy_hp=70, player_hp=60)
+
+                if win7:
+                    say("Akira: \"The Tear of Fate... it's mine!\" ", 2.5)
+                    say("Chronos: \"No... this cannot be...\" ", 2.5)
+                    say("Chronos start fading into ashes", 2.5)
+                    say("Akira: \"I did it...\" ", 2.5)
+                    say("Akira claims the Tear of Fate, its power coursing through her.", 2.5)
+                    say("Combining the three relics, Akira feels an insane surge of power.", 2.5)
+                    say("The time-space around her warps and bends.", 2.5)
+                    say("Akira closes her eyes, focusing on her desire to change her fate.", 2.5)
+                    say("With a burst of energy, Akira unleashes the combined power of the relics.", 2.5)
+                    say("The temple shakes, the very fabric of reality bending to her will.", 2.5)
+                    say("Akira has now absolute control over time.", 2.5)
+                    say("Akira: \"I can forge the world as I see it fits...\" ", 2.5)
+                            
+                    final_choice1 = input("\nWill you rewrite the world? (yes/no): ").lower()
+
+                    if final_choice1 == "yes":
+                        say("Akira focuses her newfound power, envisioning a world free from suffering and pain.", 2.5)
+                        say("With a wave of her hand, she rewrites the fabric of reality.", 2.5)
+                        say("A new world is born, one where kindness and compassion reign supreme.", 2.5)
+                        say("Akira: \"This is the world I always dreamed of...\" ", 2.5)
+                        say("As she surveys her creation, Akira feels a deep sense of fulfillment.", 2.5)
+                        say("She has changed her fate, and in doing so, has changed the fate of the world itself.", 2.5)
+                        say("The new God of Time has a name: Akira.", 2.5)
+                        say("\n\n--- THE END: THE GOD OF TIME ---\n\n", 3)
+                        return True
+                            
+                    elif final_choice1 == "no":
+                        say("Akira looks at the world she has the power to create.", 2.5)
+                        say("But she hesitates, realizing the weight of such a decision.", 2.5)
+                        say("Akira: \"I cannot do this...\" ", 2.5)
+                        say("Akira returns to the moment before the moment she entered in the portal", 2.5)
+                        say("Akira: \"Some things are better left unchanged...\" ", 2.5)
+                        say("She throws the relics into the portal, sealing it once more.", 2.5)
+                        say("Akira destroys the portal and returns to the castle", 2.5)
+                        say("Akira: \"Time is absolute...\" ", 2.5)
+                        say("The Queen: \"Welcome back, Akira. Did you find what you were looking for?\" ", 2.5)
+                        say("Akira: \"Yes... and no...\" ", 2.5)
+                        say("Akira: \"I have come to accept that some things are beyond my control.\" ", 2.5)
+                        say("The Queen: \"Wise words, Akira. Sometimes, acceptance is the greatest power of all.\" ", 2.5)
+                        say("Akira: \"I will use my powers to protect those I care about, but I will not try to change fate itself.\" ", 2.5)
+                        say("The Queen: \"A noble choice. You have grown much, Akira.\" ", 2.5)
+                        say("Akira: \"Thank you, Your Majesty. I am ready to embrace my role as the royal mage.\" ", 2.5)
+                        say("As Akira steps into her new role, she feels a sense of peace.", 2.5)
+                        say("She has learned that true power lies not in changing fate, but in accepting it.", 2.5)
+                        say("\n\n--- THE END: THE ROYAL MAGE ---\n\n", 3)
+                        return True
+    
+
+                    elif not win7:
+                        say("Chronos overpowers Akira, his control over time too much for her to handle.", 2.5)
+                        say("Akira: \"I... was not ready for this...\" ", 2.5)
+                        say("Chronos: \"You have already lost, Akira.\" ", 2.5)
+                        say("The world fades to black.", 2.5)
+                        return False
+                    else:
+                        say("Unexpected input.", 2.5)
+                        return False
+                
+
             elif not win2:
                 say("The guards overpower Akira, their strength and numbers too much for her to handle.", 2.5)
                 say("Akira: \"I... I won't... let you...\" ", 2.5)
@@ -339,18 +592,15 @@ def chapter1():
 
 
 
+            else:
+                say("Unexpected input.", 2.5)
+                return False
+        
         else:
             say("Unexpected input.", 2.5)
-            return False
-    
-    
-    else:
-        say("Akira falls to the ground, the world fading to black.", 2.5)
-        say("Leader: \"Looks like we found ourselves a new toy.\" ", 2.5)
-        say("The relic is taken from her, its power now in the hands of those who do not understand it.", 2.5)
-        say("And so, the journey ends...", 2.5)
+            return False 
 
-print("✨ Welcome to Relics of Time ✨")
+print("✨ Relics of Time ✨")
 startgame = int(input("Start the game (1)   Exit (2): "))
 
 if startgame == 1:
@@ -377,4 +627,4 @@ elif startgame == 2:
     print("You have closed the game.")
 else:
     print("Unexpected input. Exiting...")
-    print("Unexpected input. Exiting...")
+    
