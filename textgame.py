@@ -599,6 +599,15 @@ def chapter1():
         else:
             say("Unexpected input.", 2.5)
             return False 
+    
+    elif not win:
+        say("The bandit overpowers Akira, his strength and cunning too much for her to handle.", 2.5)
+        say("Akira: \"I... I won't... let you...\" ", 2.5)
+        say("The world fades to black.", 2.5)
+        return False
+    else:
+        say("Unexpected input.", 2.5)
+        return False
 
 print("✨ Relics of Time ✨")
 startgame = int(input("Start the game (1)   Exit (2): "))
