@@ -558,16 +558,12 @@ def chapter1():
                         say("She throws the relics into the portal, sealing it once more.", 2.5)
                         say("Akira destroys the portal and returns to the castle", 2.5)
                         say("Akira: \"Time is absolute...\" ", 2.5)
-                        say("The Queen: \"Welcome back, Akira. Did you find what you were looking for?\" ", 2.5)
-                        say("Akira: \"Yes... and no...\" ", 2.5)
+                        say("Akira returns to the forest", 2.5)
                         say("Akira: \"I have come to accept that some things are beyond my control.\" ", 2.5)
-                        say("The Queen: \"Wise words, Akira. Sometimes, acceptance is the greatest power of all.\" ", 2.5)
-                        say("Akira: \"I will use my powers to protect those I care about, but I will not try to change fate itself.\" ", 2.5)
-                        say("The Queen: \"A noble choice. You have grown much, Akira.\" ", 2.5)
-                        say("Akira: \"Thank you, Your Majesty. I am ready to embrace my role as the royal mage.\" ", 2.5)
-                        say("As Akira steps into her new role, she feels a sense of peace.", 2.5)
-                        say("She has learned that true power lies not in changing fate, but in accepting it.", 2.5)
-                        say("\n\n--- THE END: THE ROYAL MAGE ---\n\n", 3)
+                        say("Akira: \"It's not about changing the past, but about shaping the future.\" ", 2.5)
+                        say("As she steps into the forest, she feels a sense of peace wash over her.", 2.5)
+                        say("Akira: \"Time for a new beginning...\" ", 2.5)
+                        say("\n\n--- THE END: PEACE ---\n\n", 3)
                         return True
     
 
