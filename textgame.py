@@ -98,6 +98,7 @@ def chapter0():
         say("Akira steps back, her relic pulsing faintly in warning.", 2.5)
         say("She turns away, disappearing into the fog.", 2.5)
         say("Akira: \"Not everything should be changed.\" ", 2.5)
+        say("\n\n--- THE END: NOTHING SHOULD BE CHANGED ---\n\n", 3)
         return False
     else:
         say("The wind howls softly. The relic fades into dust.", 2.5)
@@ -563,7 +564,7 @@ def chapter1():
                         say("Akira: \"It's not about changing the past, but about shaping the future.\" ", 2.5)
                         say("As she steps into the forest, she feels a sense of peace wash over her.", 2.5)
                         say("Akira: \"Time for a new beginning...\" ", 2.5)
-                        say("\n\n--- THE END: PEACE ---\n\n", 3)
+                        say("\n\n--- THE END: THE SEAL ---\n\n", 3)
                         return True
     
 
@@ -632,4 +633,3 @@ elif startgame == 2:
     print("You have closed the game.")
 else:
     print("Unexpected input. Exiting...")
-    
