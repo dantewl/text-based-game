@@ -111,9 +111,9 @@ def chapter1():
     say("The Heart of Eternity pulses with a new rhythm, resonating with the echoes of time.", 2.5)
     say("She knows the journey is far from over.", 2.5)
     say("Guided by the whispers of her two relics, she ventures deeper into the forest.", 2.5)
-    say("The trees seem to part for her, revealing a hidden village", 2.5)
+    say("The trees seem to part for her, revealing a hidden kingdom.", 2.5)
     say("The villagers look at her covered with a black cloak.", 2.5)
-    say("She walks to the center of the village, where an bar stands.", 2.5)
+    say("She walks to the center of the kingdom, where an bar stands.", 2.5)
     say("Inside, she sees a group of people drinking and laughing.", 2.5)
     say("Akira approaches the bar, her presence drawing curious glances.", 2.5)
     say("Bartender: \"What'll it be, traveler?\" ", 2.5)
@@ -135,7 +135,7 @@ def chapter1():
     say("With a swift motion, Akira grips her staff, the Heart of Eternity glowing faintly.", 2.5)
     say("Leader: \"Let me see how brave you are little lamb!\" ", 2.5)
     
-    win = battle("Village Thug", enemy_hp=30, player_hp=40)
+    win = battle("Leader of Thugs", enemy_hp=30, player_hp=40)
 
     if win:
         say("Akira stands victorious, the thugs retreating in fear.", 2.5)
@@ -143,7 +143,7 @@ def chapter1():
         say("Akira: \"Maybe not. But I’m not the one who should be afraid.\"", 2.5)
         say("She watches them disappear into the night, her grip tightening on the Heart of Eternity.", 2.5)
         say("Akira: \"I should find some place to rest.\"", 2.5)
-        say("As she walks through the village, she sees a small inn with a warm light glowing from the windows.", 2.5)
+        say("As she walks through the kingdom, she sees a small inn with a warm light glowing from the windows.", 2.5)
         say("She enters, hoping to find some respite after the thugs.", 2.5)
         say("Inside, the inn is cozy, filled with the scent of wood smoke and baked bread.", 2.5)
         say("The innkeeper looks up as she enters.", 2.5)
@@ -171,8 +171,8 @@ def chapter1():
         say("Akira: \"As well as I could. Here’s your payment.\" ", 2.5)
         say("Innkeeper: \"Thank you. Safe travels, Akira.\" ", 2.5)
         say("Akira: \"I appreciate your kindness. Have a nice day.\" ", 2.5)
-        say("Akira steps outside, the morning sun casting a golden light over the village.", 2.5)
-        say("As she walks through the center of the village, she notices the townsfolk going about their daily routines.", 2.5)
+        say("Akira steps outside, the morning sun casting a golden light over the kingdom.", 2.5)
+        say("As she walks through the center of the kingdom, she notices the townsfolk going about their daily routines.", 2.5)
         say("Akira reveals her silver hair and winter-colored eyes, standing out among the villagers.", 2.5)
         say("Enchnanted by Akira's beauty, a few villagers stop to stare, whispering among themselves.", 2.5)
         say("She feels their eyes on her, feeling embarrassed.", 2.5)
@@ -470,7 +470,7 @@ def chapter1():
             say("Before Akira can react, the bodyguards move in.", 2.5)
             say("Akira: \"That's how you want to play then...\" ", 2.5)
 
-            win2 = battle(enemy_name="Royal Guards", enemy_hp=50, player_hp=40)
+            win2 = battle(enemy_name="Royal Guards", enemy_hp=55, player_hp=40)
 
             if win2:
                 say("Akira stands victorious, the guards retreating in fear.", 2.5)
@@ -480,9 +480,9 @@ def chapter1():
                 say("The Queen: \"You are brave, and I admire that. But bravery alone won't save you.\" ", 2.5)
                 say("Akira: \"That's what you think.\"", 2.5)
                 say("Akira turns around and leaves the castle.", 2.5)
-                say("As she walks through the village, she feels the eyes of the villagers on her.", 2.5)
+                say("As she walks through the kingdom, she feels the eyes of the villagers on her.", 2.5)
                 say("Akira: \"I need to find a way out of this place...\" ", 2.5)
-                say("She quickly makes her way to the edge of the village, hoping to find a path through the forest.", 2.5)
+                say("She quickly makes her way to the edge of the kingdom, hoping to find a path through the forest.", 2.5)
                 say("Akira disappears into the trees, the Heart of Eternity pulsing with a new urgency.", 2.5)
                 say("Akira: \"I must find the Tear of Fate... before they do.\" ", 2.5)
                 say("The Heart of Eternity glows brighter, as if guiding her towards her next destination.", 2.5)
